@@ -1,0 +1,4 @@
+/* rem & em do not depend on html font-size in media queries! Instead, 1rem = 1em = 16px */ 
+
+/* ************************ */
+/* Responding to small laptops */

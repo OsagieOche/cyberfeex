@@ -1,0 +1,314 @@
+/* 
+-- 01 TYPOGRAPHY SYSTEM
+
+FONT SIZES (PX):
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights 
+small: 300
+Default: 400
+large-sm: 500
+large: 600;
+
+-- Line heights
+Default: 1
+
+
+
+-- 02 COLORS
+
+- Primary: 
+- Tints
+- Shades
+- Greys
+
+-- 05 SHADOWS
+
+-- 06 BORDER-RADIUS
+small: .5rem
+md: .8rem
+
+-- 07 WHITESPACE
+
+SPACING SYSTEM (px):
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  text-decoration: none;
+  font-family: Helvetica, sans-serif;
+}
+
+.whitespace {
+  background-color: #fff;
+  height: 60px;
+}
+
+/* ************************ */
+/* GENERAL REUSABLE COMPONENTS */
+
+/* **** CENTER/CONTAIN **** */
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.container--p0 {
+  max-width: 120rem;
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+
+
+.center {
+  text-align: center;
+}
+
+.text-left{
+  text-align: left;
+}
+
+/* **** DROPDOWN NAVBAR **** */
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 3.8rem;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  min-width: 18rem;
+  border-radius: 0 0 1rem 1rem;
+  font-family: inherit;
+  color: #000;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  display: block;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* *** BUTTON *** */
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  padding: 1.6rem 3.2rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: #2d84de;
+}
+
+.btn--blue-border:link,
+.btn--blue-border:visited {
+  border: 1px solid #2d84de;
+}
+
+/* *** OTHERS ***** */
+
+.subheading {
+  font-size: 4.4rem;
+  font-weight: 600;
+  color: #17426f;
+  /* padding: 4rem; */
+}
+
+.description {
+  max-width: 60rem;
+  text-align: center;
+  margin: 0 auto 5rem;
+  font-size: 1em;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+.description--lg {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-size: 1.4rem;
+  max-width: 96rem;
+  margin: 0 auto 5rem;
+  font-weight: 300;
+  color: #3c3d3e;
+}
+
+/* ***** GRID ***** */
+.grid {
+  display: grid;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--center-v {
+  justify-items: center;
+}
+
+.grid--column-gap {
+  column-gap: 2.5rem;
+}
+
+.grid--column-gap-m {
+  column-gap: 3.5rem;
+}
+
+
+.grid--row-gap-m {
+  row-gap: 3.5rem;
+}
+
+.grid--row-gap {
+  row-gap: 2.5rem;
+}
+
+.justify-end {
+  justify-self: end;
+}
+
+.grid-item-left{
+  justify-self: left;
+}
+
+.grid-item-right{
+  justify-self: right;
+}
+
+/* ******* MARGIN & PADDING **** */
+.margin-bottom-lg {
+  margin-bottom: 10rem;
+}
+
+.margin-bottom-md {
+  margin-bottom: 8rem;
+}
+
+.margin-top-sm {
+  margin-top: 6.4rem;
+}
+
+.margin-top-lg {
+  margin-top: 10rem;
+}
+
+.margin-bottom-sm {
+  margin-bottom: 6.4rem;
+}
+
+.margin-bottom-xsm {
+  margin-bottom: 2.4rem;
+}
+
+.padding-top-lg {
+  padding-top: 10rem;
+}
+
+.padding-top-sm {
+  padding-top: 3.6rem;
+}
+
+.padding-bottom-sm {
+  padding-bottom: 2rem;
+}
+
+.padding-bottom-md {
+  padding-bottom: 8rem;
+}
+
+/* *** FOOTER **** */
+
+.footer-text {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.dropbtn {
+  font-size: 1.4rem;
+  border: none;
+  outline: none;
+  color: #000;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  font-weight: 300;
+}
+
+
+
+/* ****** SUBPAGE HEADER ******* */
+.subpage-header{
+  display: flex;
+  justify-content: space-around;
+  max-width: 120rem;
+  margin: 5rem auto;
+  text-align: center;
+  height: 20rem;
+}
+
+.subpage-header p:nth-child(1), .subpage-header p:nth-child(2){
+  width: 100%;
+  align-content: center;
+  color: #fff;
+
+}
+
+.subpage-header p:nth-child(1){
+  background-color: #0F2C4A;
+  font-size: 4rem;
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-thickness: .2rem;
+  text-decoration-color: #96C1EE;
+  border-radius: 3rem 0 0 0;
+}
+
+.subpage-header p:nth-child(2){
+  background-color: #52677D;
+  font-size: 1.6rem;
+  height: 70%;
+  border-radius: 0 0 3rem 0;
+  
+}
+
+
+.bottom-border{
+  border-bottom: thin solid #aaa;
+}
