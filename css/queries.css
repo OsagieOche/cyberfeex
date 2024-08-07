@@ -2,3 +2,54 @@
 
 /* ************************ */
 /* Responding to small laptops */
+
+
+/* **** LARGE MONITORS ****** */
+@media(min-width: 91em){ 
+  .spiral-arrow{
+    display: none;
+  }
+}
+
+/* BELOW 1264px */
+@media(max-width: 79em){
+  .hero-text-primary {
+    font-size: 5.4rem;
+  }
+
+  .book-consultation-area{
+   margin: 10rem;
+  }
+
+  .meet-the-ceo{
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+}
+
+
+/* BELOW 1072px */
+@media(max-width: 67em){
+  .hero {
+    padding-top: 10rem;
+    padding-left: 10rem;
+    max-width: 90rem;
+  }
+
+  .feature {
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    box-shadow: 1.7rem 1.7rem 1.7rem 1.7rem rgba(2, 2, 2, 0.035);
+    padding: 2rem;
+    max-width: 350px;
+    height: 250px;
+    text-align: left;
+    margin-bottom: 4rem;
+    border-radius: 0rem 4rem;
+  }
+
+  .description--lg {
+    max-width: 66rem;
+    margin: 1rem auto 5rem;
+  }
+}

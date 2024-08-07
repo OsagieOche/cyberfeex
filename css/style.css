@@ -73,7 +73,7 @@
 .hero-text-primary {
   padding-bottom: 20px;
   line-height: 1.1;
-  font-size: 62px;
+  font-size: 6.2rem;
   font-weight: bold;
 }
 
@@ -283,7 +283,6 @@
   max-width: 120rem;
   margin: 0 auto;
   text-align: center;
-  margin-top: 5rem;
 }
 
 .meet-the-ceo-header-container {
