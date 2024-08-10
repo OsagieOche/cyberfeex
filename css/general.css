@@ -179,6 +179,10 @@ body {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.grid--3-cols-features {
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .grid--center-v {
   justify-items: center;
 }

@@ -29,7 +29,7 @@
 
 
 /* BELOW 1072px */
-@media(max-width: 67em){
+@media(max-width: 73em){
   .hero {
     padding-top: 10rem;
     padding-left: 10rem;
@@ -37,19 +37,44 @@
   }
 
   .feature {
-    display: grid;
-    grid-template-columns: 1fr 8fr;
-    box-shadow: 1.7rem 1.7rem 1.7rem 1.7rem rgba(2, 2, 2, 0.035);
-    padding: 2rem;
-    max-width: 350px;
+    max-width: 300px;
     height: 250px;
-    text-align: left;
     margin-bottom: 4rem;
-    border-radius: 0rem 4rem;
+    box-shadow: none;
+    border: .05px solid #55555523;
+  }
+
+  .feature p {
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.5;
   }
 
   .description--lg {
     max-width: 66rem;
     margin: 1rem auto 5rem;
   }
+}
+
+/* BELOW 992px */
+@media(max-width: 62em) {
+  .grid--3-cols-features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .feature--mq1{
+    justify-self: end;
+    margin-right: 1.25rem
+  }
+
+  .feature--mq2{
+    justify-self: start;
+    margin-left: 1.25rem
+  }
+
+  .feature--mq3{
+    grid-column: 1 / -1; /* Spans across both columns */
+    justify-self: center; /* Centers the item horizontally */
+  }
+  
 }
