@@ -188,6 +188,10 @@
     max-width: 60rem;
   }
 
+  .hero-secondary {
+    max-width: 46rem;
+  }
+
   .resource span {
     font-size: 1.5rem;
     font-weight: 550;
