@@ -60,6 +60,10 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .feature {
+    border-radius: 2rem 2rem;
+  }
+
   .feature--mq1 {
     justify-self: end;
     margin-right: 1.25rem;
@@ -76,13 +80,28 @@
   }
 }
 
-
 /* BELOW 944px */
 @media (max-width: 59em) {
+  .hero {
+    padding-left: 8rem;
+  }
+
+  .hero-text-primary {
+    font-size: 4.8rem;
+    max-width: 70rem;
+  }
+
+  .hero-secondary {
+    font-size: 1.4rem;
+  }
+
+  .subheading {
+    font-size: 4rem;
+  }
+
   .btn-mobile-nav {
     display: block;
   }
-
 
   .main-nav {
     background-color: #fff;
@@ -97,29 +116,26 @@
     justify-content: center;
     transition: all 1s ease-in;
 
-     /*hide visually  */
+    /*hide visually  */
     opacity: 0;
     /* hide from mouse and keyboard */
     pointer-events: none;
     /* hide from screen readers */
     visibility: hidden;
-
-    
-
   }
 
-  .nav-open .main-nav{
+  .nav-open .main-nav {
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
     transform: translateX(0);
   }
 
-  .nav-open .icon-mobile-nav[name='close-outline']{
+  .nav-open .icon-mobile-nav[name="close-outline"] {
     display: block;
   }
 
-  .nav-open .icon-mobile-nav[name='menu-outline']{
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
     display: none;
   }
 
@@ -132,4 +148,61 @@
   .main-nav-link:visited {
     font-size: 2rem;
   }
+
+  .resource span {
+    font-size: 1.8rem;
+  }
+  
+  .resource p {
+    max-width: 24rem;
+    font-size: 1.1rem;
+
+  }
+
+  .spiral-arrow {
+    display: none;
+  }
+
+  .testimonial img:not([src*="person"]){
+    display: none;
+  }
+
+  .testimonial {
+    grid-template-columns: 1fr;
+  }
+
+  .meet-the-ceo2 p {
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+  }
+
+  .footer-text {
+    font-size: 1.3rem;
+  }
+}
+
+/* BELOW 816px */
+@media (max-width: 51em) {
+  .hero-text-primary {
+    font-size: 4.2rem;
+    max-width: 60rem;
+  }
+
+  .resource span {
+    font-size: 1.5rem;
+    font-weight: 550;
+  }
+
+  .resource p {
+    max-width: 20rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+
+  .meet-the-ceo.grid--2-cols {
+    grid-template-columns: 0.8fr 1fr;
+
+  }
+
+
 }
